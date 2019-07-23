@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [appiumMobileApkAutomation]" parallel="tests">
+  <listeners>
+    <listener class-name="com.ExtentReportListner.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="1" name="appiumtestngTest(failed)" parallel="tests">
+    <classes>
+      <class name="com.appium.scripts.SK_CreateAccount">
+        <methods>
+          <include name="launchSafetyKuvrr"/>
+          <include name="tearDown"/>
+          <include name="CreateAccount"/>
+        </methods>
+      </class> <!-- com.appium.scripts.SK_CreateAccount -->
+      <class name="com.appium.scripts.SK_LogIn">
+        <methods>
+          <include name="signInApp"/>
+          <include name="RemoveApp"/>
+          <include name="launchSafetyKuvrr"/>
+        </methods>
+      </class> <!-- com.appium.scripts.SK_LogIn -->
+    </classes>
+  </test> <!-- appiumtestngTest(failed) -->
+</suite> <!-- Failed suite [appiumMobileApkAutomation] -->

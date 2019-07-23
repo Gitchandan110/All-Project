@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="1">
+
+	<listeners>
+		<listener
+			class-name="com.ExtentReportListner.ExtentReporterNG" />
+	</listeners>
+
+
+<!-- 	<test name="SKLogin">
+		<classes>
+			<class name="com.appium.scripts.SK_LogIn" />
+		</classes>
+	</test> -->
+
+
+<!-- 	<test name="SKNewAccount">
+		<classes>
+			<class name="com.appium.scripts.SK_CreateAccount" />
+		</classes>
+	</test>
+ -->
+
+
+	<test name="SKSafeWalk">
+		<classes>
+			<class name="com.appium.scripts.SK_SafeWalk_Incident" />
+		</classes>
+	</test>
+
+
+	<test name="SKSOS">
+		<classes>
+			<class name="com.appium.scripts.SK_SOS_Incident" />
+		</classes>
+	</test>
+
+
+
+	<test name="SKTimer">
+		<classes>
+			<class name="com.appium.scripts.SK_Timer_Incident" />
+		</classes>
+	</test>
+	
+
+	<test name="SKTips">
+		<classes>
+			<class name="com.appium.scripts.SK_Tips_Anonymous" />
+		</classes>
+	</test>
+
+</suite>

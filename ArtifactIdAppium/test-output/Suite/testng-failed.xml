@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.ExtentReportListner.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="SKSafeWalk(failed)">
+    <classes>
+      <class name="com.appium.scripts.SK_SafeWalk_Incident">
+        <methods>
+          <include name="launchSafetyKuvrr"/>
+          <include name="testSafewalkIncident"/>
+        </methods>
+      </class> <!-- com.appium.scripts.SK_SafeWalk_Incident -->
+    </classes>
+  </test> <!-- SKSafeWalk(failed) -->
+  <test thread-count="5" name="SKSOS(failed)">
+    <classes>
+      <class name="com.appium.scripts.SK_SOS_Incident">
+        <methods>
+          <include name="launchSafetyKuvrr"/>
+          <include name="testSOSIncident"/>
+        </methods>
+      </class> <!-- com.appium.scripts.SK_SOS_Incident -->
+    </classes>
+  </test> <!-- SKSOS(failed) -->
+  <test thread-count="5" name="SKTimer(failed)">
+    <classes>
+      <class name="com.appium.scripts.SK_Timer_Incident">
+        <methods>
+          <include name="launchSafetyKuvrr"/>
+          <include name="testTimerIncident"/>
+        </methods>
+      </class> <!-- com.appium.scripts.SK_Timer_Incident -->
+    </classes>
+  </test> <!-- SKTimer(failed) -->
+  <test thread-count="5" name="SKTips(failed)">
+    <classes>
+      <class name="com.appium.scripts.SK_Tips_Anonymous">
+        <methods>
+          <include name="testTimerIncident"/>
+          <include name="launchSafetyKuvrr"/>
+        </methods>
+      </class> <!-- com.appium.scripts.SK_Tips_Anonymous -->
+    </classes>
+  </test> <!-- SKTips(failed) -->
+</suite> <!-- Failed suite [Suite] -->

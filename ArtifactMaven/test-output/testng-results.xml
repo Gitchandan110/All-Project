@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="53967" started-at="2019-07-23T09:00:55Z" finished-at="2019-07-23T09:01:49Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="53967" started-at="2019-07-23T09:00:55Z" finished-at="2019-07-23T09:01:49Z">
+      <class name="com.TestNGScript.file.HomeAmazon">
+        <test-method status="PASS" signature="launchAmazon()[pri:0, instance:com.TestNGScript.file.HomeAmazon@768b970c]" name="launchAmazon" is-config="true" duration-ms="16093" started-at="2019-07-23T09:00:55Z" finished-at="2019-07-23T09:01:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchAmazon -->
+        <test-method status="PASS" signature="TestHomePageTitle()[pri:1, instance:com.TestNGScript.file.HomeAmazon@768b970c]" name="TestHomePageTitle" duration-ms="107" started-at="2019-07-23T09:01:11Z" finished-at="2019-07-23T09:01:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestHomePageTitle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.TestNGScript.file.HomeAmazon@768b970c]" name="tearDown" is-config="true" duration-ms="992" started-at="2019-07-23T09:01:11Z" finished-at="2019-07-23T09:01:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="launchAmazon()[pri:0, instance:com.TestNGScript.file.HomeAmazon@768b970c]" name="launchAmazon" is-config="true" duration-ms="10851" started-at="2019-07-23T09:01:12Z" finished-at="2019-07-23T09:01:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchAmazon -->
+        <test-method status="PASS" signature="TestAmazonLogo()[pri:2, instance:com.TestNGScript.file.HomeAmazon@768b970c]" name="TestAmazonLogo" duration-ms="4232" started-at="2019-07-23T09:01:23Z" finished-at="2019-07-23T09:01:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestAmazonLogo -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.TestNGScript.file.HomeAmazon@768b970c]" name="tearDown" is-config="true" duration-ms="851" started-at="2019-07-23T09:01:28Z" finished-at="2019-07-23T09:01:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="launchAmazon()[pri:0, instance:com.TestNGScript.file.HomeAmazon@768b970c]" name="launchAmazon" is-config="true" duration-ms="8872" started-at="2019-07-23T09:01:28Z" finished-at="2019-07-23T09:01:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchAmazon -->
+        <test-method status="PASS" signature="TestAmazonSell()[pri:3, instance:com.TestNGScript.file.HomeAmazon@768b970c]" name="TestAmazonSell" duration-ms="11125" started-at="2019-07-23T09:01:37Z" finished-at="2019-07-23T09:01:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestAmazonSell -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.TestNGScript.file.HomeAmazon@768b970c]" name="tearDown" is-config="true" duration-ms="806" started-at="2019-07-23T09:01:48Z" finished-at="2019-07-23T09:01:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.TestNGScript.file.HomeAmazon -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
