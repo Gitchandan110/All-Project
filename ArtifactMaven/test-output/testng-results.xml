@@ -2,19 +2,23 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="40312" started-at="2019-07-27T11:47:43Z" finished-at="2019-07-27T11:48:23Z">
+  <suite name="Default suite" duration-ms="58367" started-at="2019-07-27T12:47:52Z" finished-at="2019-07-27T12:48:51Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="40312" started-at="2019-07-27T11:47:43Z" finished-at="2019-07-27T11:48:23Z">
+    <test name="Default test" duration-ms="58367" started-at="2019-07-27T12:47:52Z" finished-at="2019-07-27T12:48:51Z">
       <class name="com.TestNGScript.file.SafetyKuvrrOpenIncident">
-        <test-method status="PASS" signature="launchSKApp()[pri:0, instance:com.TestNGScript.file.SafetyKuvrrOpenIncident@7ba18f1b]" name="launchSKApp" is-config="true" duration-ms="24330" started-at="2019-07-27T11:47:43Z" finished-at="2019-07-27T11:48:07Z">
+        <test-method status="PASS" signature="launchSKApp()[pri:0, instance:com.TestNGScript.file.SafetyKuvrrOpenIncident@15b3e5b]" name="launchSKApp" is-config="true" duration-ms="27040" started-at="2019-07-27T12:47:52Z" finished-at="2019-07-27T12:48:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchSKApp -->
-        <test-method status="PASS" signature="launchSafetyApp()[pri:1, instance:com.TestNGScript.file.SafetyKuvrrOpenIncident@7ba18f1b]" name="launchSafetyApp" duration-ms="15945" started-at="2019-07-27T11:48:07Z" finished-at="2019-07-27T11:48:23Z">
+        <test-method status="PASS" signature="launchSafetyApp()[pri:0, instance:com.TestNGScript.file.SafetyKuvrrOpenIncident@15b3e5b]" name="launchSafetyApp" duration-ms="30449" started-at="2019-07-27T12:48:19Z" finished-at="2019-07-27T12:48:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchSafetyApp -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.TestNGScript.file.SafetyKuvrrOpenIncident@15b3e5b]" name="closeBrowser" is-config="true" duration-ms="836" started-at="2019-07-27T12:48:50Z" finished-at="2019-07-27T12:48:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
       </class> <!-- com.TestNGScript.file.SafetyKuvrrOpenIncident -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

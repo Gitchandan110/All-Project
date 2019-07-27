@@ -7,14 +7,15 @@
     </listeners>
 
 
-  <test name="Test" parallel="classes" thread-count="3">
+  <test name="Test" parallel="false" thread-count="1">
     <classes>
       
     
       <class name="com.TestNGScript.file.LoginSafetyKuvrr"/>
       <class name="com.TestNGScript.file.SafetyKuvrrBroadcast"/>
       <class name="com.TestNGScript.file.SafetyKuvrrHomePageMenu"/>
-    <!--     <class name="com.TestNGScript.file.LoginAmazon"/>
+      <class name="com.TestNGScript.file.SafetyKuvrrOpenIncident"/>
+      <!--     <class name="com.TestNGScript.file.LoginAmazon"/>
       <class name="com.TestNGScript.file.HomeAmazon"/>
        -->
       
