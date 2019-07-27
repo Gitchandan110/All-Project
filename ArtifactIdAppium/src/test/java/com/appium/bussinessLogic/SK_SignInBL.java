@@ -40,11 +40,7 @@ public class SK_SignInBL extends SK_SignInPO {
 		try {
 
 			if (Password().isDisplayed()) {
-
-				//Password().sendKeys("12345678");
-				
 				Password().sendKeys(ExcelUtils.ReadExcel(LoginDataSheet, 1, 1));
-
 				System.out.println("Password entered");
 
 			}
