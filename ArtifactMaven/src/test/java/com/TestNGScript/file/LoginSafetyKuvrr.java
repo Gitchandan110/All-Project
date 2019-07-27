@@ -9,38 +9,40 @@ import org.testng.annotations.Test;
 
 import com.BussinessFlow.file.LoginSafetyKuvrrBL;
 import com.Commonutills.file.Base;
-import com.Commonutills.file.Read_Write_Excel;
+import com.Commonutills.file.ExcelUtils;
 
 public class LoginSafetyKuvrr extends Base {
 	LoginSafetyKuvrrBL loginSKbl=PageFactory.initElements(driver, LoginSafetyKuvrrBL.class);
+	String LoginDataSheet = "Login";
+	
 
 
 	@BeforeMethod
 
 	public void launchSK() throws IOException {
 
-		//opendriver();
+	
 		chromeDriver();
-		Read_Write_Excel readexcel= new Read_Write_Excel();
-	    String url=readexcel.appURL();
+	    String url=ExcelUtils.ReadExcel(LoginDataSheet, 1, 0);
 		driver.get(url);		
 		
 	}
 
 	@Test
 
-	public void TestLoginSafetyKuvrr() throws IOException {
+	public void loginSafetyKuvrr() throws IOException {
 		
 		
-		loginSKbl.login();
-
+		loginSKbl.fillEmail();
+		loginSKbl.fillPassword();
+		loginSKbl.clickContinue();
 	}
 
 	@AfterMethod
 
 	public void closeBrowser() {
 
-//	driver.quit();
+	driver.quit();
 	}
 
 }

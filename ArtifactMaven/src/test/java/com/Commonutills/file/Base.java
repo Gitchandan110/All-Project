@@ -23,8 +23,6 @@ public class Base {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
-	
-		
 		return driver;
 
 	}
@@ -32,8 +30,8 @@ public class Base {
 	
 	public static WebDriver chromeDriver() {
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Chandan\\Desktop\\Eclipse\\Selenium\\chromedriver.exe");
-		WebDriver driver=new ChromeDriver();
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Chandan\\git\\repository\\ArtifactMaven\\Test Data\\chromedriver.exe");
+	    driver=new ChromeDriver();
 		driver.manage().window().maximize();
 	    driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 	    String url="https://safety-test.kuvrr.com/observer/";

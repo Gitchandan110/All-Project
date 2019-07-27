@@ -16,8 +16,6 @@ public class SK_SignInBL extends SK_SignInPO {
 
 			if (Email().isDisplayed()) {
 				System.out.println("Email Found");
-			//	Email().sendKeys("karbontest@yopmail.com");
-			
 				Email().sendKeys(ExcelUtils.ReadExcel(LoginDataSheet, 1, 0));
 				System.out.println("Email is:"+ ExcelUtils.ReadExcel(LoginDataSheet, 1, 0));
 				System.out.println("Email entered");

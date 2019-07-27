@@ -13,26 +13,24 @@ import org.testng.annotations.Test;
 import com.BussinessFlow.file.LoginSafetyKuvrrBL;
 import com.BussinessFlow.file.SafetyKuvrrOpenIncidentBL;
 import com.Commonutills.file.Base;
-import com.Commonutills.file.Read_Write_Excel;
+import com.Commonutills.file.ExcelUtils;
 
 public class SafetyKuvrrOpenIncident extends Base {
 	
 	SafetyKuvrrOpenIncidentBL openIncidentbl=PageFactory.initElements(driver, SafetyKuvrrOpenIncidentBL.class);
 	LoginSafetyKuvrrBL loginSafetyKuvrrBL=PageFactory.initElements(driver, LoginSafetyKuvrrBL.class);
 	
+	String LoginDataSheet = "Login";
+	
+	
 	@BeforeMethod
 	
 	public void launchSKApp() throws InterruptedException, IOException {
 		
 		opendriver();
-	//	chromeDriver();
-		Read_Write_Excel readexcel= new Read_Write_Excel();
-		String url=readexcel.appURL();
+		String url=ExcelUtils.ReadExcel(LoginDataSheet, 1, 0);
 		driver.get(url);
-		WebDriverWait wait = new WebDriverWait(driver, 100);
-		By Email=By.cssSelector("input[type='text'][id='email']");
-		WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(Email));
-	    System.out.println("Found WebElement Email");
+		Thread.sleep(5000);
 		
 			
 	}
@@ -41,7 +39,9 @@ public class SafetyKuvrrOpenIncident extends Base {
 		
 		public void launchSafetyApp() throws IOException, InterruptedException {
 			
-			loginSafetyKuvrrBL.login();
+			loginSafetyKuvrrBL.fillEmail();
+			loginSafetyKuvrrBL.fillPassword();
+			loginSafetyKuvrrBL.clickContinue();
 			openIncidentbl.verifyOpenIncident();
    
 }

@@ -2,54 +2,66 @@ package com.BussinessFlow.file;
 
 
 import java.io.IOException;
-import java.util.ArrayList;
-
 import com.Commonutills.file.Base;
-import com.Commonutills.file.ReadExcelColumn;
+import com.Commonutills.file.ExcelUtils;
 import com.PageObjectRepository.file.LoginSafetyKuvrrPL;
 
 public class LoginSafetyKuvrrBL extends LoginSafetyKuvrrPL {
 	
+	String LoginDataSheet="Login";
 	
-	
-	public void login() throws IOException {
-		
-		ArrayList<String> Email;
-		ArrayList<String> Password;
-		ReadExcelColumn readExcel=new ReadExcelColumn();
-		Email=readExcel.readExcel(1);
-		Password=readExcel.readExcel(2);
-		try {
-		
-	if (Email().isDisplayed()==true && Password().isDisplayed()==true) {
-		
-	
-		Email().clear();
-		Email().click();
-		Base.highLightElement(driver, Email());
-		System.out.println("Email field found");
-		
-		for(int i=0; i<Email.size();i++) {
-		
-		Email().sendKeys(Email.get(i));
-		Password().click();
-		Password().clear();
-		Base.highLightElement(driver, Password());
-		System.out.println("Password field found");
-		Password().sendKeys(Password.get(i));
-		BtnContinue().click();
-	}
-	}
-	else {
-		
-		System.out.println("Email and Password field is not found");
-	}
-				
-		}	catch (Exception ex)	{
-			
-			System.out.println("Exception in Login functionality :" + ex.getStackTrace());
-			System.out.println("Exception in Login functionality :" + ex.getMessage());
+public void fillEmail() {
+
+	try {
+			if (Email().isDisplayed()) {
+				System.out.println("Email Found");
+				Email().sendKeys(ExcelUtils.ReadExcel(LoginDataSheet, 1, 1));
+				System.out.println("Email is:"+ ExcelUtils.ReadExcel(LoginDataSheet, 1, 1));
+				System.out.println("Email entered");
+			}
+
+			else {
+				System.out.println("Email not entered");
+			}
+		} catch (Exception ex) {
+
+			System.out.println("Exception in Email:" + ex.getMessage());
+			System.out.println("StackTrace in Email:" + ex.getStackTrace());
+			System.out.println("ExceptionCause in Email:" + ex.getCause());
 		}
+
 	}
+
+	public void fillPassword() {
+
+		try {
+
+			if (Password().isDisplayed()) {
+				Password().sendKeys(ExcelUtils.ReadExcel(LoginDataSheet, 1, 2));
+				System.out.println("Password entered");
+
+			}
+
+			else {
+
+				System.out.println("Password not entered");
+			}
+		} catch (Exception ex) {
+
+			System.out.println("Exception in Password:" + ex.getMessage());
+		}
+
+	}
+	
+	public void clickContinue() {
+		
+		if (BtnContinue().isDisplayed()){
+			
+			BtnContinue().click();
+		}
+		
+		
+	}
+	
 
 }

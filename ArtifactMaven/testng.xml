@@ -7,7 +7,7 @@
     </listeners>
 
 
-  <test thread-count="5" name="Test" parallel="false">
+  <test name="Test" parallel="classes" thread-count="3">
     <classes>
       
     

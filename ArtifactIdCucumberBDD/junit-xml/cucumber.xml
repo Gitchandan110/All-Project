@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="19.348406">
+<testcase classname="Safety Login feature" name="Login Functionality" time="19.348406">
+<system-out><![CDATA[Given user navigates to https://safety-red5.kuvrr.com/......................passed
+When title of the login page is Safety Kuvrr................................passed
+Then user enters email "admin" and password "secret"........................passed
+Then user click on continue button..........................................passed
+And user is on home Page....................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

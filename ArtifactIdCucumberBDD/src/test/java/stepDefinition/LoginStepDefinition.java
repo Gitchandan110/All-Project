@@ -44,12 +44,12 @@ public class LoginStepDefinition {
 		
 	}
 	
-	@Then ("^user enters email admin and password secret$")
+	@Then ("^user enters email \"(.*)\" and password \"(.*)\"$")
 	
-	public void fillUserCredential() {
+	public void fillUserCredential(String email, String password) {
 		
-		driver.findElement(By.cssSelector("input[type='text'][id='email']")).sendKeys("admin");
-		driver.findElement(By.cssSelector("input[type='password'][id='password']")).sendKeys("secret");
+		driver.findElement(By.cssSelector("input[type='text'][id='email']")).sendKeys(email);
+		driver.findElement(By.cssSelector("input[type='password'][id='password']")).sendKeys(password);
 		driver.findElement(By.cssSelector("input[class='btn'][id='submit']")).click();
 		
 			

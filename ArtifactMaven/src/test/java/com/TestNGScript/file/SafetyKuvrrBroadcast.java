@@ -10,19 +10,20 @@ import org.testng.annotations.Test;
 import com.BussinessFlow.file.LoginSafetyKuvrrBL;
 import com.BussinessFlow.file.SafetyKuvrrBroadcastBL;
 import com.Commonutills.file.Base;
-import com.Commonutills.file.Read_Write_Excel;
+import com.Commonutills.file.ExcelUtils;
 
 public class SafetyKuvrrBroadcast extends Base{
 	SafetyKuvrrBroadcastBL broadcastbl=PageFactory.initElements(driver, SafetyKuvrrBroadcastBL.class);
 	LoginSafetyKuvrrBL loginSafetyKuvrrBL=PageFactory.initElements(driver, LoginSafetyKuvrrBL.class);
+	
+	String LoginDataSheet = "Login";
 	
 	@BeforeMethod
 	
 	public void launchSKApp() throws InterruptedException, IOException {
 		
 		opendriver();
-		Read_Write_Excel readexcel= new Read_Write_Excel();
-		String url=readexcel.appURL();
+		String url=ExcelUtils.ReadExcel(LoginDataSheet, 1, 0);
 		driver.get(url);
 		Thread.sleep(5000);
 	
@@ -35,7 +36,9 @@ public class SafetyKuvrrBroadcast extends Base{
 	
 	public void launchSafetyApp() throws IOException {
 		
-		loginSafetyKuvrrBL.login();
+		loginSafetyKuvrrBL.fillEmail();
+		loginSafetyKuvrrBL.fillPassword();
+		loginSafetyKuvrrBL.clickContinue();
 		broadcastbl.verifyBroadcastBtn();
 		broadcastbl.verifyBroadcastMessage();
 		broadcastbl.verifyBtnSubmit();

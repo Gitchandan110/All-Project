@@ -4,12 +4,25 @@
   <listeners>
     <listener class-name="com.ExtentReportListner.ExtentReporterNG"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="Test(failed)" parallel="classes">
     <classes>
+      <class name="com.TestNGScript.file.SafetyKuvrrBroadcast">
+        <methods>
+          <include name="launchSafetyApp"/>
+          <include name="closeBrowser"/>
+          <include name="launchSKApp"/>
+        </methods>
+      </class> <!-- com.TestNGScript.file.SafetyKuvrrBroadcast -->
+      <class name="com.TestNGScript.file.SafetyKuvrrHomePageMenu">
+        <methods>
+          <include name="TestHambugerMenuClick"/>
+          <include name="launchApp"/>
+        </methods>
+      </class> <!-- com.TestNGScript.file.SafetyKuvrrHomePageMenu -->
       <class name="com.TestNGScript.file.LoginSafetyKuvrr">
         <methods>
           <include name="TestLoginSafetyKuvrr"/>
-          <include name="SetUp"/>
+          <include name="launchSK"/>
           <include name="closeBrowser"/>
         </methods>
       </class> <!-- com.TestNGScript.file.LoginSafetyKuvrr -->
