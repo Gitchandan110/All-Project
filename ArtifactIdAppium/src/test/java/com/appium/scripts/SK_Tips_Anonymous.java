@@ -30,7 +30,7 @@ public class SK_Tips_Anonymous extends Base {
 
 	public void launchSafetyKuvrr() throws MalformedURLException {
 
-		launchApp();
+		launchApk();
 		System.out.println("App Launched Successfull");
 
 	}

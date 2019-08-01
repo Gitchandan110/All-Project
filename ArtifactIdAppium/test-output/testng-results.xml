@@ -2,20 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="109679" started-at="2019-07-22T05:46:42Z" finished-at="2019-07-22T05:48:32Z">
+  <suite name="Default suite" duration-ms="30526" started-at="2019-08-01T12:36:39Z" finished-at="2019-08-01T12:37:10Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="109679" started-at="2019-07-22T05:46:42Z" finished-at="2019-07-22T05:48:32Z">
-      <class name="com.appium.scripts.SK_Tips_Anonymous">
-        <test-method status="PASS" signature="launchSafetyKuvrr()[pri:0, instance:com.appium.scripts.SK_Tips_Anonymous@1d29cf23]" name="launchSafetyKuvrr" is-config="true" duration-ms="37331" started-at="2019-07-22T05:46:42Z" finished-at="2019-07-22T05:47:20Z">
+    <test name="Default test" duration-ms="30526" started-at="2019-08-01T12:36:39Z" finished-at="2019-08-01T12:37:10Z">
+      <class name="com.appium.scripts.SK_LoginInstalledApp">
+        <test-method status="PASS" signature="launchApp()[pri:0, instance:com.appium.scripts.SK_LoginInstalledApp@5e853265]" name="launchApp" duration-ms="30441" started-at="2019-08-01T12:36:39Z" finished-at="2019-08-01T12:37:10Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchSafetyKuvrr -->
-        <test-method status="PASS" signature="testTimerIncident()[pri:0, instance:com.appium.scripts.SK_Tips_Anonymous@1d29cf23]" name="testTimerIncident" duration-ms="72295" started-at="2019-07-22T05:47:20Z" finished-at="2019-07-22T05:48:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTimerIncident -->
-      </class> <!-- com.appium.scripts.SK_Tips_Anonymous -->
+        </test-method> <!-- launchApp -->
+      </class> <!-- com.appium.scripts.SK_LoginInstalledApp -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

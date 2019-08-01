@@ -10,7 +10,7 @@ public class SK_SetTimerBL extends SK_SetTimerPO{
 		
 		try {
 
-			if (btnSetTimer().isDisplayed()) {
+			if (btnSetTimer().isDisplayed()) { 
 				System.out.println("Set Timer Button displayed");
 				btnSetTimer().click();
 				Thread.sleep(3000);

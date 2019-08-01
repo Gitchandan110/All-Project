@@ -32,7 +32,7 @@ public class SK_SOS_Incident extends Base{
 
 	public void launchSafetyKuvrr() throws MalformedURLException {
 
-		launchApp();
+		launchApk();
 		System.out.println("App Launched Successfull");
 
 	}

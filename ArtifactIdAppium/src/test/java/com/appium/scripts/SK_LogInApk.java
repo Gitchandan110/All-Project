@@ -17,7 +17,7 @@ import com.appium.commonutils.Base;
 
 import io.appium.java_client.AppiumDriver;
 
-public class SK_LogIn extends Base {
+public class SK_LogInApk extends Base {
 
 	SK_LaunchBL launchbl = PageFactory.initElements(driver, SK_LaunchBL.class);
 	SK_TermsOfServicesBL termsbl = PageFactory.initElements(driver, SK_TermsOfServicesBL.class);
@@ -30,7 +30,7 @@ public class SK_LogIn extends Base {
 
 	public void launchSafetyKuvrr() throws MalformedURLException {
 
-		launchApp();
+		launchApk();
 		System.out.println("App Launched Successfull");
 
 	}
