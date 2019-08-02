@@ -12,7 +12,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelUtils {
 
-	static File Path = new File("C://Users//Chandan//git//AppiumSafetyKuvrr//Appium//TestData//TestData.xlsx");
+	static File Path = new File("C://Users//Chandan//git//repository//ArtifactIdAppium//TestData//TestData.xlsx");
 
 	public static String ReadExcel(String sheetName, int rownum, int cellnum) throws IOException {
 

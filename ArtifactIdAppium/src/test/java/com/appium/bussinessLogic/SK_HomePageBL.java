@@ -93,4 +93,21 @@ public class SK_HomePageBL extends SK_HomePagePO {
 
 		}
 	}
+	
+	
+	public void clickSetting() {
+		
+		
+		btnSettings().click();
+		System.out.println("Setting Button Clicked");
+		
+		
+		
+	}
+	
+	
+	
+	
+	
+	
 }

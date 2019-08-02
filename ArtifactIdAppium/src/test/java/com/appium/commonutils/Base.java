@@ -151,5 +151,14 @@ public class Base {
 		return date1;
 
 	}
+	
+	
+	public static void scrolltoElement(String text){
+		
+	 driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\""+text+"\").instance(0))");
+		        
+   }
+	
+	
 
 }

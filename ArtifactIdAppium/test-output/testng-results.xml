@@ -2,16 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="30526" started-at="2019-08-01T12:36:39Z" finished-at="2019-08-01T12:37:10Z">
+  <suite name="Default suite" duration-ms="127727" started-at="2019-08-02T07:16:39Z" finished-at="2019-08-02T07:18:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="30526" started-at="2019-08-01T12:36:39Z" finished-at="2019-08-01T12:37:10Z">
-      <class name="com.appium.scripts.SK_LoginInstalledApp">
-        <test-method status="PASS" signature="launchApp()[pri:0, instance:com.appium.scripts.SK_LoginInstalledApp@5e853265]" name="launchApp" duration-ms="30441" started-at="2019-08-01T12:36:39Z" finished-at="2019-08-01T12:37:10Z">
+    <test name="Default test" duration-ms="127727" started-at="2019-08-02T07:16:39Z" finished-at="2019-08-02T07:18:47Z">
+      <class name="com.appium.scripts.SK_SOSInstalledApp">
+        <test-method status="PASS" signature="launchApp()[pri:0, instance:com.appium.scripts.SK_SOSInstalledApp@33f88ab]" name="launchApp" is-config="true" duration-ms="30184" started-at="2019-08-02T07:16:39Z" finished-at="2019-08-02T07:17:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-      </class> <!-- com.appium.scripts.SK_LoginInstalledApp -->
+        <test-method status="PASS" signature="Login()[pri:0, instance:com.appium.scripts.SK_SOSInstalledApp@33f88ab]" name="Login" is-config="true" duration-ms="57444" started-at="2019-08-02T07:17:09Z" finished-at="2019-08-02T07:18:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="SOS()[pri:0, instance:com.appium.scripts.SK_SOSInstalledApp@33f88ab]" name="SOS" duration-ms="27038" started-at="2019-08-02T07:18:07Z" finished-at="2019-08-02T07:18:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SOS -->
+        <test-method status="PASS" signature="logOutApp()[pri:0, instance:com.appium.scripts.SK_SOSInstalledApp@33f88ab]" name="logOutApp" is-config="true" duration-ms="13015" started-at="2019-08-02T07:18:34Z" finished-at="2019-08-02T07:18:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutApp -->
+      </class> <!-- com.appium.scripts.SK_SOSInstalledApp -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
