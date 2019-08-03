@@ -20,7 +20,7 @@ import com.appium.bussinessLogic.SK_SignInBL;
 import com.appium.bussinessLogic.SK_TermsOfServicesBL;
 import com.appium.commonutils.Base;
 
-public class SK_IA_TimerIncident extends Base{
+public class SK_IA_Timer extends Base{
 	
 		SK_LaunchBL launchbl = PageFactory.initElements(driver, SK_LaunchBL.class);
 		SK_TermsOfServicesBL termsbl = PageFactory.initElements(driver, SK_TermsOfServicesBL.class);

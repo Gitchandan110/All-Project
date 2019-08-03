@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import com.appium.bussinessLogic.SK_Install4mGooglePlayBL;
 import com.appium.commonutils.Base;
 
-public class SK_Install4mGooglePlay extends Base{
+public class SK_IA_GooglePlay extends Base{
 	
 	SK_Install4mGooglePlayBL googleplaybl=PageFactory.initElements(driver, SK_Install4mGooglePlayBL.class);
 	
