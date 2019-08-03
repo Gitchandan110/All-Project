@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="127727" started-at="2019-08-02T07:16:39Z" finished-at="2019-08-02T07:18:47Z">
+  <suite name="Default suite" duration-ms="511050" started-at="2019-08-03T06:20:43Z" finished-at="2019-08-03T06:29:14Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="127727" started-at="2019-08-02T07:16:39Z" finished-at="2019-08-02T07:18:47Z">
-      <class name="com.appium.scripts.SK_SOSInstalledApp">
-        <test-method status="PASS" signature="launchApp()[pri:0, instance:com.appium.scripts.SK_SOSInstalledApp@33f88ab]" name="launchApp" is-config="true" duration-ms="30184" started-at="2019-08-02T07:16:39Z" finished-at="2019-08-02T07:17:09Z">
+    <test name="Default test" duration-ms="511050" started-at="2019-08-03T06:20:43Z" finished-at="2019-08-03T06:29:14Z">
+      <class name="com.appium.scripts.SK_IA_TimerIncident">
+        <test-method status="PASS" signature="launchApp()[pri:0, instance:com.appium.scripts.SK_IA_TimerIncident@2d8f65a4]" name="launchApp" is-config="true" duration-ms="58508" started-at="2019-08-03T06:20:43Z" finished-at="2019-08-03T06:21:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method status="PASS" signature="Login()[pri:0, instance:com.appium.scripts.SK_SOSInstalledApp@33f88ab]" name="Login" is-config="true" duration-ms="57444" started-at="2019-08-02T07:17:09Z" finished-at="2019-08-02T07:18:07Z">
+        <test-method status="PASS" signature="signInApp()[pri:0, instance:com.appium.scripts.SK_IA_TimerIncident@2d8f65a4]" name="signInApp" is-config="true" duration-ms="65190" started-at="2019-08-03T06:21:41Z" finished-at="2019-08-03T06:22:46Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method status="PASS" signature="SOS()[pri:0, instance:com.appium.scripts.SK_SOSInstalledApp@33f88ab]" name="SOS" duration-ms="27038" started-at="2019-08-02T07:18:07Z" finished-at="2019-08-02T07:18:34Z">
+        </test-method> <!-- signInApp -->
+        <test-method status="PASS" signature="TimerIncident()[pri:0, instance:com.appium.scripts.SK_IA_TimerIncident@2d8f65a4]" name="TimerIncident" duration-ms="375623" started-at="2019-08-03T06:22:46Z" finished-at="2019-08-03T06:29:02Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SOS -->
-        <test-method status="PASS" signature="logOutApp()[pri:0, instance:com.appium.scripts.SK_SOSInstalledApp@33f88ab]" name="logOutApp" is-config="true" duration-ms="13015" started-at="2019-08-02T07:18:34Z" finished-at="2019-08-02T07:18:47Z">
+        </test-method> <!-- TimerIncident -->
+        <test-method status="PASS" signature="logOutApp()[pri:0, instance:com.appium.scripts.SK_IA_TimerIncident@2d8f65a4]" name="logOutApp" is-config="true" duration-ms="11682" started-at="2019-08-03T06:29:02Z" finished-at="2019-08-03T06:29:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutApp -->
-      </class> <!-- com.appium.scripts.SK_SOSInstalledApp -->
+      </class> <!-- com.appium.scripts.SK_IA_TimerIncident -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
