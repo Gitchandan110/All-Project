@@ -33,7 +33,7 @@ public class Base {
 
 	public static AppiumDriver launchApk() throws MalformedURLException {
 
-		File appDir = new File("C:\\Users\\Chandan\\git\\AppiumSafetyKuvrr\\Appium\\ApkFile");
+		File appDir = new File("C:\\Users\\Chandan\\git\\repository\\ArtifactIdAppium\\ApkFile");
 		File apk = new File(appDir, "SK_49_develop_21_June.apk");
 
 		DesiredCapabilities capability = new DesiredCapabilities();
