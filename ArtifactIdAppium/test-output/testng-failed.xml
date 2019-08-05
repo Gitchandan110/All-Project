@@ -1,16 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.ExtentReportListner.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="SK_IA_SOS(failed)">
     <classes>
-      <class name="com.appium.scripts_App.SK_IA_SOS">
+      <class name="com.appium.AppScripts.SK_IA_SOS">
         <methods>
-          <include name="SOS"/>
           <include name="Login"/>
           <include name="logOutApp"/>
           <include name="launchApp"/>
+          <include name="SOS"/>
         </methods>
-      </class> <!-- com.appium.scripts_App.SK_IA_SOS -->
+      </class> <!-- com.appium.AppScripts.SK_IA_SOS -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- SK_IA_SOS(failed) -->
+  <test thread-count="5" name="SK_IA_SafeWalk(failed)">
+    <classes>
+      <class name="com.appium.AppScripts.SK_IA_SafeWalk">
+        <methods>
+          <include name="safeWalk"/>
+          <include name="launchApp"/>
+          <include name="signInApp"/>
+          <include name="logOutApp"/>
+        </methods>
+      </class> <!-- com.appium.AppScripts.SK_IA_SafeWalk -->
+    </classes>
+  </test> <!-- SK_IA_SafeWalk(failed) -->
+</suite> <!-- Failed suite [Suite] -->
