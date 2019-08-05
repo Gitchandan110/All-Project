@@ -10,29 +10,29 @@
 
 <!-- 	<test name="SKLogin">
 		<classes>
-			<class name="com.appium.scripts.SK_LogIn" />
+			<class name="com.appium.ApkScripts.SK_LogInApk" />
 		</classes>
 	</test> -->
 
 
 <!-- 	<test name="SKNewAccount">
 		<classes>
-			<class name="com.appium.scripts.SK_CreateAccount" />
+			<class name="com.appium.ApkScripts.SK_CreateAccount" />
 		</classes>
 	</test>
  -->
 
 
-	<test name="SKSafeWalk">
+	<!-- <test name="SKSafeWalk">
 		<classes>
-			<class name="com.appium.scripts.SK_SafeWalk_Incident" />
+			<class name="com.appium.ApkScripts.SK_SafeWalk_Incident" />
 		</classes>
 	</test>
 
 
 	<test name="SKSOS">
 		<classes>
-			<class name="com.appium.scripts.SK_SOS_Incident" />
+			<class name="com.appium.ApkScripts.SK_SOS_Incident" />
 		</classes>
 	</test>
 
@@ -40,15 +40,42 @@
 
 	<test name="SKTimer">
 		<classes>
-			<class name="com.appium.scripts.SK_Timer_Incident" />
+			<class name="com.appium.ApkScripts.SK_Timer_Incident" />
 		</classes>
 	</test>
 	
 
 	<test name="SKTips">
 		<classes>
-			<class name="com.appium.scripts.SK_Tips_Anonymous" />
+			<class name="com.appium.ApkScripts.SK_Tips_Anonymous" />
 		</classes>
 	</test>
+	
+	 -->
+	 	<test name="SK_IA_SOS">
+		<classes>
+			<class name="com.appium.AppScripts.SK_IA_SOS" />
+		</classes>
+	</test>
+	
+	<test name="SK_IA_CreateAccount">
+		<classes>
+			<class name="com.appium.AppScripts.SK_IA_CreateAccount" />
+		</classes>
+	</test>
+	
+	<test name="SK_IA_SafeWalk">
+		<classes>
+			<class name="com.appium.AppScripts.SK_IA_SafeWalk" />
+		</classes>
+	</test>
+	
+
+	<test name="SK_IA_Timer">
+		<classes>
+			<class name="com.appium.AppScripts.SK_IA_Timer" />
+		</classes>
+	</test>
+	
 
 </suite>

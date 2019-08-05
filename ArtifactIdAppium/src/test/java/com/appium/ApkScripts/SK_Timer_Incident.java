@@ -1,23 +1,26 @@
-package com.appium.scripts;
+package com.appium.ApkScripts;
 
 import java.net.MalformedURLException;
+
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import com.appium.bussinessLogic.SK_HomePageBL;
+import com.appium.bussinessLogic.SK_IncidentScreenBL;
 import com.appium.bussinessLogic.SK_LaunchBL;
 import com.appium.bussinessLogic.SK_PermissionBL;
 import com.appium.bussinessLogic.SK_PrivacyPolicyBL;
 import com.appium.bussinessLogic.SK_QuickTipsBL;
+import com.appium.bussinessLogic.SK_SetTimerBL;
+import com.appium.bussinessLogic.SK_SettingsBL;
 import com.appium.bussinessLogic.SK_SignInBL;
 import com.appium.bussinessLogic.SK_TermsOfServicesBL;
 import com.appium.commonutils.Base;
 
-import io.appium.java_client.AppiumDriver;
-
-public class SK_LogInApk extends Base {
+public class SK_Timer_Incident extends Base {
 
 	SK_LaunchBL launchbl = PageFactory.initElements(driver, SK_LaunchBL.class);
 	SK_TermsOfServicesBL termsbl = PageFactory.initElements(driver, SK_TermsOfServicesBL.class);
@@ -25,6 +28,10 @@ public class SK_LogInApk extends Base {
 	SK_SignInBL signinbl = PageFactory.initElements(driver, SK_SignInBL.class);
 	SK_PermissionBL permissionbl = PageFactory.initElements(driver, SK_PermissionBL.class);
 	SK_QuickTipsBL quicktipsbl = PageFactory.initElements(driver, SK_QuickTipsBL.class);
+	SK_HomePageBL homepagebl = PageFactory.initElements(driver, SK_HomePageBL.class);
+	SK_SetTimerBL setTimerbl = PageFactory.initElements(driver, SK_SetTimerBL.class);
+	SK_IncidentScreenBL incidentscreenbl = PageFactory.initElements(driver, SK_IncidentScreenBL.class);
+	SK_SettingsBL settingsbl = PageFactory.initElements(driver, SK_SettingsBL.class);
 
 	@BeforeTest
 
@@ -35,8 +42,9 @@ public class SK_LogInApk extends Base {
 
 	}
 
-	@Test(priority=1)
-	public void signInApp() {
+	@BeforeMethod
+
+	public void loginApp() {
 
 		launchbl.verifyTitle();
 		launchbl.clickBtnSignIn();
@@ -50,11 +58,23 @@ public class SK_LogInApk extends Base {
 
 	}
 
+	@Test
+	public void testTimerIncident() {
+
+		homepagebl.startTimer();
+		setTimerbl.SetTimer();
+		setTimerbl.Set();
+		incidentscreenbl.EndIncident();
+		incidentscreenbl.SelectEndReason();
+
+	}
+
 	@AfterMethod
 
-	public void RemoveApp() {
+	public void logOutApp() {
 
-	((AppiumDriver) driver).removeApp("com.safety.armourgrid");
+		homepagebl.clickSetting();
+		settingsbl.logOutSK();
 
 	}
 

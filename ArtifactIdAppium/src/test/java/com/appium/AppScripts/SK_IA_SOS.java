@@ -1,4 +1,4 @@
-package com.appium.scripts;
+package com.appium.AppScripts;
 
 import java.net.MalformedURLException;
 

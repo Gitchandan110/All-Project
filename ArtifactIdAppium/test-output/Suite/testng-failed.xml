@@ -4,44 +4,52 @@
   <listeners>
     <listener class-name="com.ExtentReportListner.ExtentReporterNG"/>
   </listeners>
-  <test thread-count="5" name="SKSafeWalk(failed)">
+  <test thread-count="5" name="SK_IA_SOS(failed)">
     <classes>
-      <class name="com.appium.scripts.SK_SafeWalk_Incident">
+      <class name="com.appium.scripts.SK_IA_SOS">
         <methods>
-          <include name="launchSafetyKuvrr"/>
-          <include name="testSafewalkIncident"/>
+          <include name="logOutApp"/>
+          <include name="SOS"/>
+          <include name="Login"/>
+          <include name="launchApp"/>
         </methods>
-      </class> <!-- com.appium.scripts.SK_SafeWalk_Incident -->
+      </class> <!-- com.appium.scripts.SK_IA_SOS -->
     </classes>
-  </test> <!-- SKSafeWalk(failed) -->
-  <test thread-count="5" name="SKSOS(failed)">
+  </test> <!-- SK_IA_SOS(failed) -->
+  <test thread-count="5" name="SK_IA_CreateAccount(failed)">
     <classes>
-      <class name="com.appium.scripts.SK_SOS_Incident">
+      <class name="com.appium.scripts.SK_IA_CreateAccount">
         <methods>
-          <include name="launchSafetyKuvrr"/>
-          <include name="testSOSIncident"/>
+          <include name="createAccount"/>
+          <include name="logOutApp"/>
+          <include name="launchApp"/>
+          <include name="pageTitle"/>
         </methods>
-      </class> <!-- com.appium.scripts.SK_SOS_Incident -->
+      </class> <!-- com.appium.scripts.SK_IA_CreateAccount -->
     </classes>
-  </test> <!-- SKSOS(failed) -->
-  <test thread-count="5" name="SKTimer(failed)">
+  </test> <!-- SK_IA_CreateAccount(failed) -->
+  <test thread-count="5" name="SK_IA_SafeWalk(failed)">
     <classes>
-      <class name="com.appium.scripts.SK_Timer_Incident">
+      <class name="com.appium.scripts.SK_IA_SafeWalk">
         <methods>
-          <include name="launchSafetyKuvrr"/>
-          <include name="testTimerIncident"/>
+          <include name="logOutApp"/>
+          <include name="safeWalk"/>
+          <include name="launchApp"/>
+          <include name="signInApp"/>
         </methods>
-      </class> <!-- com.appium.scripts.SK_Timer_Incident -->
+      </class> <!-- com.appium.scripts.SK_IA_SafeWalk -->
     </classes>
-  </test> <!-- SKTimer(failed) -->
-  <test thread-count="5" name="SKTips(failed)">
+  </test> <!-- SK_IA_SafeWalk(failed) -->
+  <test thread-count="5" name="SK_IA_Timer(failed)">
     <classes>
-      <class name="com.appium.scripts.SK_Tips_Anonymous">
+      <class name="com.appium.scripts.SK_IA_Timer">
         <methods>
-          <include name="testTimerIncident"/>
-          <include name="launchSafetyKuvrr"/>
+          <include name="TimerIncident"/>
+          <include name="launchApp"/>
+          <include name="logOutApp"/>
+          <include name="signInApp"/>
         </methods>
-      </class> <!-- com.appium.scripts.SK_Tips_Anonymous -->
+      </class> <!-- com.appium.scripts.SK_IA_Timer -->
     </classes>
-  </test> <!-- SKTips(failed) -->
+  </test> <!-- SK_IA_Timer(failed) -->
 </suite> <!-- Failed suite [Suite] -->

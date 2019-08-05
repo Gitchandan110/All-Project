@@ -2,6 +2,8 @@ package com.appium.bussinessLogic;
 
 import com.appium.pageobject.SK_NewAccountPO;
 
+import io.appium.java_client.AppiumDriver;
+
 public class SK_NewAccountBL extends SK_NewAccountPO {
 
 	public void createProfile() {
@@ -31,19 +33,19 @@ public class SK_NewAccountBL extends SK_NewAccountPO {
 				
 			        driver.hideKeyboard();
 			   		if (txtEmail().isDisplayed()) {
-					txtEmail().sendKeys("appium@yopmail.com");
+					txtEmail().sendKeys("appium1@yopmail.com");
 					System.out.println("Email entered");
 					
 					
 					if (driver.isKeyboardShown() == true) {
 						driver.hideKeyboard();
 						txtConfirmEmail().click();
-						txtConfirmEmail().sendKeys("appium@yopmail.com");
+						txtConfirmEmail().sendKeys("appium1@yopmail.com");
 						System.out.println("Confirm Email entered");
 					} else {
 						
 						txtConfirmEmail().click();
-						txtConfirmEmail().sendKeys("appium@yopmail.com");
+						txtConfirmEmail().sendKeys("appium1@yopmail.com");
 						System.out.println("Confirm Email entered");
 						
 						
@@ -98,6 +100,7 @@ public class SK_NewAccountBL extends SK_NewAccountPO {
 		} catch (Exception ex) {
 
 			System.out.println("Exception in Create Profile:" + ex.getMessage());
+			((AppiumDriver) driver).closeApp();
 		}
 
 	}

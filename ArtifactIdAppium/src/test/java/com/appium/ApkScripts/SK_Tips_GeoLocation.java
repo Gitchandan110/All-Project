@@ -1,4 +1,4 @@
-package com.appium.scripts;
+package com.appium.ApkScripts;
 
 import java.net.MalformedURLException;
 
@@ -15,8 +15,8 @@ import com.appium.bussinessLogic.SK_TermsOfServicesBL;
 import com.appium.bussinessLogic.SK_TipSubmitBL;
 import com.appium.commonutils.Base;
 
-public class SK_Tips_Anonymous extends Base {
-
+public class SK_Tips_GeoLocation extends Base{
+	
 	SK_LaunchBL launchbl = PageFactory.initElements(driver, SK_LaunchBL.class);
 	SK_TermsOfServicesBL termsbl = PageFactory.initElements(driver, SK_TermsOfServicesBL.class);
 	SK_PrivacyPolicyBL privacypolicybl = PageFactory.initElements(driver, SK_PrivacyPolicyBL.class);
@@ -48,9 +48,13 @@ public class SK_Tips_Anonymous extends Base {
 		permissionbl.acceptPermissions();
 		quicktipsbl.CloseTips();
 		homepagebl.startTips();
+		tipsubmitbl.RemainAnonymous();
+		tipsubmitbl.IncludeGeoLocation();
 		tipsubmitbl.TipsDescription();
 		tipsubmitbl.IncludeGeoLocation();
 		tipsubmitbl.SendTips();
 
 	}
 }
+
+
